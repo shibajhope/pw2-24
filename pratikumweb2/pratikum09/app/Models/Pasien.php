@@ -13,10 +13,13 @@ class Pasien extends Model
     protected $fillable = [
         'kode',
         'nama',
-        'tmpt_lahir',
+        'tmp_lahir',
         'tgl_lahir',
         'gender',
         'email',
-        'amalat',
+        'alamat',
     ];
+    
+    // disable timestamps
+    public $timestamps = false;
 }
