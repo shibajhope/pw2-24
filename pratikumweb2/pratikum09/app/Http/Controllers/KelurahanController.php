@@ -13,7 +13,6 @@ class KelurahanController extends Controller
     public function index()
     {
         $kelurahan = Kelurahan::get();
-
         return view('kelurahan.index', compact('kelurahan'));
     }
 
